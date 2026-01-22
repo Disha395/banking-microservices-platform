@@ -1,2 +1,13 @@
-package com.eazybytes.cards.dto;public class ResponseDto {
+package com.eazybytes.cards.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class ResponseDto {
+
+    private String statusCode;
+
+    private String statusMsg;
 }
