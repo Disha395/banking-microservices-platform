@@ -15,26 +15,26 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @EnableConfigurationProperties(value = {AccountsContactInfoDto.class})
 @OpenAPIDefinition(
-		info = @Info(
-				title = "Accounts microservice REST API Documentation",
-				description = "Accounts microservice REST API Documentation",
-				version = "v1",
-				contact = @Contact(
-						name = "Disha Nayak",
-						email = "dishanayak395@gmail.com"
-				),
-				license = @License(
-						name = "Apache 2.0"
-				)
-		),
-		externalDocs = @ExternalDocumentation(
-				description =  "Accounts microservice REST API Documentation"
-		)
+        info = @Info(
+                title = "Accounts microservice REST API Documentation",
+                description = "Accounts microservice REST API Documentation",
+                version = "v1",
+                contact = @Contact(
+                        name = "Disha Nayak",
+                        email = "dishanayak395@gmail.com"
+                ),
+                license = @License(
+                        name = "Apache 2.0"
+                )
+        ),
+        externalDocs = @ExternalDocumentation(
+                description =  "Accounts microservice REST API Documentation"
+        )
 )
 public class  AccountsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AccountsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(AccountsApplication.class, args);
+    }
 
 }

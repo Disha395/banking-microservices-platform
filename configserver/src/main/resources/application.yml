@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/Disha395/config-files.git"
+          username: Disha395
+          password: ${GIT_TOKEN}
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+
+encrypt:
+  key: "YFURV8GYIG94B29GBRIWUBV9GEQGH9OEU"
+
+
+
+server:
+  port: 8071
