@@ -16,6 +16,8 @@ services:
       service: network-deploy-service
 
   configserver:
+    environment:
+      SPRING_CLOUD_CONFIG_SERVER_GIT_PASSWORD: ${SPRING_CLOUD_CONFIG_SERVER_GIT_PASSWORD}
     image: "disha395/configserver:s6"
     container_name: configserver-ms
     ports:
@@ -76,5 +78,5 @@ services:
       service: microservice-configserver-config
 
 networks:
-  eazybank:
+  disha395:
     driver: "bridge"
