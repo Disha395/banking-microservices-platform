@@ -2,7 +2,9 @@ package com.example.accounts.service.client;
 
 import com.example.loans.dto.LoansDto;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
+@Component
 public class LoansFallback implements LoansFeignClient{
     /**
      * @param correlationId

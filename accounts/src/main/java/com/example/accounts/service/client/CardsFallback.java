@@ -2,15 +2,13 @@ package com.example.accounts.service.client;
 
 import com.example.accounts.dto.CardsDto;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
-public class CardsFallback implements CardsFeignClient{
-    /**
-     * @param correlationId
-     * @param mobileNumber
-     * @return
-     */
+@Component
+public class CardsFallback implements CardsFeignClient {
+
     @Override
     public ResponseEntity<CardsDto> fetchCardDetails(String correlationId, String mobileNumber) {
-        return null;
+        return ResponseEntity.ok(new CardsDto());
     }
 }
