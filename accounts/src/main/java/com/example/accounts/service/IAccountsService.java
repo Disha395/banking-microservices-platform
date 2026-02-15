@@ -31,5 +31,11 @@ public interface IAccountsService {
      */
     boolean deleteAccount(String mobileNumber);
 
+    /**
+     * @param accountNumber
+     * @return
+     */
+    boolean updateCommunicationStatus(Long accountNumber);
+
 
 }
